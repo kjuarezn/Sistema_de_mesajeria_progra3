@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activites.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/fondo_1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/darkgreen_1"
+            >
+
+            <com.mancj.materialsearchbar.MaterialSearchBar
+                android:id="@+id/searchBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mt_hint="Texto de Busqueda"
+                app:mt_searchBarColor="@color/darkgreen_1"
+                app:mt_placeholder="Messenger Chats"
+                app:mt_placeholderColor="@color/white"
+                app:mt_searchIconTint="@color/white"
+                app:mt_textColor="@color/gray_1"
+                app:mt_hintColor="@color/gray_1"
+                app:mt_backIconTint="@color/gray_1"
+                app:mt_menuIconTint="@color/gray_1"
+                app:mt_leftTextSelectorTint="@color/gray_1"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkgreen_1"
+            app:tabIndicatorColor="@color/white"
+            app:tabSelectedTextColor="@color/gray_2"
+            app:tabTextColor="@color/gray_1"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

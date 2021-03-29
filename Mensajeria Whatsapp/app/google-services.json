@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "435390409106",
+    "project_id": "sistemamensajeria-9d308",
+    "storage_bucket": "sistemamensajeria-9d308.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435390409106:android:2b69dc8c58b96a3bd2b94b",
+        "android_client_info": {
+          "package_name": "com.example.mensajeriaprogra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435390409106-11loesa72qf04itus09bupspaimb117l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mensajeriaprogra",
+            "certificate_hash": "6543e595f1390b9192119ac392434fb09af58dd6"
+          }
+        },
+        {
+          "client_id": "435390409106-a6vfuemmmnsh6k33lguf2baeli4iq491.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzYcC_dweIApH3suOs4m6wAGUeMXhoLSQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "435390409106-a6vfuemmmnsh6k33lguf2baeli4iq491.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

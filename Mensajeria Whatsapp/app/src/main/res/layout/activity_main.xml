@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activites.MainActivity">
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:gravity="center"
+       android:background="@drawable/fondo_1"
+       >
+
+
+
+
+
+      <ImageView
+          android:layout_width="150dp"
+          android:layout_height="150dp"
+          android:src="@drawable/logo"
+          android:layout_gravity="center" />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Por favor ingresa tu numero de telefono. Te enviaremos un SMS que incluye un código de verificación."
+          android:textAlignment="center"
+          android:layout_marginTop="15dp"
+          android:textSize="17dp"
+          android:fontFamily="sans-serif-condensed"
+          android:layout_marginRight="15dp"
+          android:layout_marginLeft="15dp"
+          android:textColor="@color/colorPrimaryPix"
+          />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+         android:orientation="horizontal"
+          android:backgroundTint="@color/black"
+          >
+
+         <com.hbb20.CountryCodePicker
+             android:id="@+id/ccp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            app:ccp_autoDetectCountry="true"
+            tools:ccp_contentColor="#fcfdfd"
+            tools:ccp_textSiza="20sp"
+             android:layout_marginTop="24dp"
+             android:layout_marginRight="20dp"
+             android:layout_marginLeft="15dp"
+             android:textStyle="bold"
+             app:ccpDialog_textColor="@color/black"
+             />
+
+         <EditText
+             android:id="@+id/editTextPhone"
+             android:layout_width="150dp"
+             android:layout_height="wrap_content"
+             android:hint="Teléfono"
+             android:inputType="phone"
+             android:layout_marginTop="20dp"
+             android:layout_marginRight="20dp"
+             android:textStyle="bold"
+             android:textColor="@color/orange_1"
+             android:maxLines="1"/>
+
+
+
+
+      </LinearLayout>
+
+
+
+      <Button
+          android:id="@+id/btnSendCode"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="ENVIAR CÓDIGO"
+          android:layout_margin="20dp"
+          android:layout_marginTop="60dp"
+          android:background="@drawable/rounded_button"
+          android:backgroundTint="@color/darkgreen_1"
+          android:textColor="@color/white"
+          />
+
+
+
+
+
+
+
+   </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
